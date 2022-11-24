@@ -1,0 +1,397 @@
+{
+  "info": {
+    "_postman_id": "b2c0510b-e05d-4be1-91ae-6a21bf8b829d",
+    "name": "Imed-challenge",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "3815125"
+  },
+  "item": [
+    {
+      "name": "patient",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{api_url}}patient",
+          "host": [
+            "{{api_url}}patient"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "health-professional",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{api_url}}health-professional",
+          "host": [
+            "{{api_url}}health-professional"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "attendance",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{api_url}}attendance",
+          "host": [
+            "{{api_url}}attendance"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "actuator/health",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{api_url}}actuator/health",
+          "host": [
+            "{{api_url}}actuator"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "oauth_token",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "imed-challenge",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "imed-challenge",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "user",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "user",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{api_url}}oauth/token",
+          "host": [
+            "{{api_url}}oauth"
+          ],
+          "path": [
+            "token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patient",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"PATIENT 1\",\n    \"username\": \"pat1\",\n    \"roles\": \"USER\",\n    \"address\": {\n        \"street\": \"street 1\",\n        \"number\": \"1\",\n        \"city\": \"city 1\"\n    },\n    \"totalAppointment\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}patient",
+          "host": [
+            "{{api_url}}patient"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "health-professional",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"PROFESSIONAL 1\",\n    \"username\": \"pro1\",\n    \"roles\": \"HEALTH_PROFESSIONAL\",\n    \"onlineStatus\": \"AVAILABLE\",\n    \"address\": {\n        \"street\": \"street 1\",\n        \"number\": \"1\",\n        \"city\": \"city 1\"\n    },\n    \"specialty\": \"ANESTHESIOLOGY\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}health-professional",
+          "host": [
+            "{{api_url}}health-professional"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "attendance",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "    {\n            \"description\": \"ATTENDANCE TEST\",\n            \"date\": \"2022-11-23T10:00:00\",\n            \"created\": \"2022-11-22T10:00:00\",\n            \"updated\": \"2022-11-22T10:00:00\",\n            \"attendanceStatus\": \"OPEN\",\n            \"healthProfessional\": {\n                \"id\": 1,\n                \"name\": \"PROFESSIONAL 1\",\n                \"username\": \"pro1\",\n                \"roles\": \"HEALTH_PROFESSIONAL\",\n                \"onlineStatus\": \"AVAILABLE\",\n                \"address\": {\n                    \"street\": \"street 1\",\n                    \"number\": \"1\",\n                    \"city\": \"city 1\"\n                },\n                \"specialty\": \"ANESTHESIOLOGY\"\n            },\n        \"patient\": {\n            \"id\": 1,\n            \"name\": \"PATIENT 1\",\n            \"username\": \"pat1\",\n            \"roles\": \"USER\",\n            \"address\": {\n                \"id\": 1,\n                \"street\": \"street 1\",\n                \"number\": \"1\",\n                \"city\": \"city 1\"\n            },\n            \"totalAppointment\": 2\n        }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}attendance",
+          "host": [
+            "{{api_url}}attendance"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "attendance/id",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 3,\n    \"description\": \"ATTENDANCE 3 UPDATED\",\n    \"date\": \"2022-11-22T10:00:00\",\n    \"created\": \"2022-11-22T10:00:00\",\n    \"updated\": \"2022-11-22T10:00:00\",\n    \"attendanceStatus\": \"CLOSED\",\n    \"patient\": {\n        \"id\": 2,\n        \"name\": \"PATIENT 2\",\n        \"username\": \"pat2\",\n        \"roles\": \"USER\",\n        \"address\": {\n            \"id\": 2,\n            \"street\": \"street 2\",\n            \"number\": \"2\",\n            \"city\": \"city 2\"\n        },\n        \"totalAppointment\": 1\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}attendance/4",
+          "host": [
+            "{{api_url}}attendance"
+          ],
+          "path": [
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patient/id",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 8,\n    \"name\": \"PATIENT UPDATE\",\n    \"username\": \"pat1\",\n    \"roles\": \"USER\",\n    \"address\": {\n        \"id\": 13,\n        \"street\": \"street 1\",\n        \"number\": \"1\",\n        \"city\": \"city 1\"\n    },\n    \"totalAppointment\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}patient/1",
+          "host": [
+            "{{api_url}}patient"
+          ],
+          "path": [
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "health-professional/id",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"PROFESSIONAL 1 UPDATED\",\n    \"username\": \"pro1\",\n    \"roles\": \"HEALTH_PROFESSIONAL\",\n    \"onlineStatus\": \"AVAILABLE\",\n    \"address\": {\n        \"street\": \"street 1\",\n        \"number\": \"1\",\n        \"city\": \"city 1\"\n    },\n    \"specialty\": \"ANESTHESIOLOGY\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}health-professional/1",
+          "host": [
+            "{{api_url}}health-professional"
+          ],
+          "path": [
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "attendance/id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{api_url}}attendance/1",
+          "host": [
+            "{{api_url}}attendance"
+          ],
+          "path": [
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patient/id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{api_url}}patient/1",
+          "host": [
+            "{{api_url}}patient"
+          ],
+          "path": [
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "health-professional/id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjkyNzE2MDMsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFrVHJGdGwtR3RDMUJxSjhhVjFlZ2xJQm9jTSIsImNsaWVudF9pZCI6ImltZWQtY2hhbGxlbmdlIiwic2NvcGUiOlsiQURNSU4iLCJVU0VSIiwiSEVBTFRIX1BST0ZFU1NJT05BTCJdfQ.8Paf1H-JpQnRxLK_w5NUMYKPzGGwIbbUiz_JF7yuyIs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{api_url}}health-professional/1",
+          "host": [
+            "{{api_url}}health-professional"
+          ],
+          "path": [
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
